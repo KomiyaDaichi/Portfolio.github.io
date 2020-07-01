@@ -891,11 +891,11 @@ div{
 
 	.nav{
 		top: 30px;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 
 	.res-title{
-		font-size: 2.6rem;
+		font-size: 2.8rem;
 	}
 	
 	.res-title-wrap::before{
@@ -1112,26 +1112,16 @@ div{
 
 	
 	.res-scroll-up{
-		position: fixed;
-		right: 10px;
-		bottom: 10px;
-		display: block;
-		width: 70px;
-		height: 70px;
+		width: 50px;
+		height: 50px;
 		line-height: 50px;
-		border: 2px solid #000;
-		text-align: center;
+		border: 1px solid #000;
 		font-size: 1.4rem;
-		cursor: pointer;
 	}
 	
 	.res-scroll-up::before{
-		position: absolute;
-		content: "TOP";
-		left: 50%;
 		bottom: -5px;
-		transform:translateX(-50%);
 		font-size: 1.3rem;
-		font-weight: bold;
+		font-weight: 100;
 	}
 }
