@@ -956,21 +956,10 @@ div{
 	}
 
 
-	.work-more::before{
-		width: 1px;
-		height: 100%;
-		top: 6px;
-		right: -6px;
-	}
-
+	.work-more::before,
 	.work-more::after{
-		width: 100%;
-		height: 1px;
-		bottom: -6px;
-		right: -6px;
+		display: none;
 	}
-
-
 
 	.skill{
 		margin: 60px auto 0;
