@@ -623,7 +623,7 @@ div{
 		top: 0;
 		left: 0;
 		transform: translate(0,0);
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 	}
 
@@ -643,25 +643,21 @@ div{
 
 	.work-more{
 		font-size: 1.2rem;
-		margin: 30px auto 0 0;
-		width: 240px;
-		height: 70px;
-		line-height: 70px;
+		margin: 25px auto 0 0;
+		width:100%;
+		height: 60px;
+		line-height: 60px;
+		background-color: #222;
+		color: #fff;
 	}
 
 
 	.work-more::before{
-		width: 1px;
-		height: 100%;
-		top: 8px;
-		right: -8px;
+		display: none;
 	}
 
 	.work-more::after{
-		width: 100%;
-		height: 1px;
-		bottom: -8px;
-		right: -8px;
+		display: none;
 	}
 
 	.work-more:hover::before{
@@ -950,8 +946,7 @@ div{
 	.work-more{
 		font-size: 1rem;
 		margin-top: 15px;
-		width: 100px;
-		height: 40px;
+		height: 45px;
 		line-height: 40px;
 	}
 
@@ -1006,7 +1001,7 @@ div{
 	
 
 	.profile{
-		margin: 60px auto 0;
+		margin: 40px auto 0;
 		padding-top: 60px;
 	}
 
