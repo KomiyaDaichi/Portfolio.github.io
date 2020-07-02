@@ -849,24 +849,17 @@ div{
 		right: 10px;
 		bottom: 10px;
 		display: block;
-		width: 70px;
-		height: 70px;
-		line-height: 50px;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
 		border: 2px solid #000;
 		text-align: center;
-		font-size: 1.4rem;
+		font-size: 1.7rem;
 		cursor: pointer;
+		background-color: #222;
+		color: #fff;
 	}
 	
-	.res-scroll-up::before{
-		position: absolute;
-		content: "TOP";
-		left: 50%;
-		bottom: -5px;
-		transform:translateX(-50%);
-		font-size: 1.3rem;
-		font-weight: bold;
-	}
 }
 
 
@@ -1101,12 +1094,7 @@ div{
 		height: 50px;
 		line-height: 50px;
 		border: 1px solid #000;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 	
-	.res-scroll-up::before{
-		bottom: -5px;
-		font-size: 1.3rem;
-		font-weight: 100;
-	}
 }
