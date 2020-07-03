@@ -140,27 +140,15 @@ div{
 	visibility: visible;
 }
 
-.work-container{
-	width: 100%;
-	margin: 0 auto;
-}
 
 .work-box{
 	position: relative;
-	width: 100%;
-	margin: 0 auto;
+	width: 90%;
+	margin:50px auto;
 	display: none;
 }
 
 
-.work-box-container{
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%,-0);
-	width: 90%;
-	margin: 40px auto 0;
-}
 
 .work-photo{
 	overflow: hidden;
@@ -255,6 +243,11 @@ div{
 	height: 1px;
 	bottom: -8px;
 	right: -8px;
+}
+
+.work-more:hover{
+	color: #fff;
+	background-color: #222;
 }
 
 .work-more:hover::before{
@@ -362,8 +355,8 @@ div{
 	opacity: 0;
 	visibility: hidden;
 	background-color: #fbfbfb;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	display: none;
 }
 
@@ -377,14 +370,14 @@ div{
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	padding-right: 20px;
 }
 
 .profile-photo{
-	width: 40%;
-	margin-right: 80px;
+	width: 45%;
+	margin-right: 40px;
 }
 
 .profile-photo img{
@@ -392,15 +385,20 @@ div{
 }
 
 .profile-name{
-	font-size: 4rem;
+	font-size: 3.4rem;
 }
 
-.brithday,
-.hobby,
-.university{
+.brithday{
 	margin-top: 30px;
 	font-size: 1.6rem;
-	line-height: 2;
+	line-height: 1.8;
+}
+
+.hobby,
+.university{
+	margin-top: 20px;
+	font-size: 1.6rem;
+	line-height: 1.8;
 }
 
 .self-title{
@@ -415,7 +413,7 @@ div{
 .self-sentence{
 	width: 80%;
 	margin: 20px auto 0;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	line-height: 2.2;
 	letter-spacing: .5px;
 }
@@ -602,31 +600,12 @@ div{
 		padding-top: 60px;
 	}
 
-
-	.work-container{
-		width: 100%;
-		margin: 0 auto;
-
-	}
-
-
 	.work-box{
 		width: 100%;
 		margin: 60px auto 0;
 		height: auto;
 		display: block;
 	}
-
-
-	.work-box-container{
-		position: static;
-		top: 0;
-		left: 0;
-		transform: translate(0,0);
-		width: 90%;
-		margin: 0 auto;
-	}
-
 	
 	.work-title{
 		text-align: left;
