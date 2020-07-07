@@ -75,9 +75,9 @@ div{
 	position: fixed;
 	font-size: 1.6rem;
 	font-weight: bold;
-	width: 500px;
+	width: 450px;
 	right: 60px;
-	top: 80px;
+	top: 60px;
 	z-index: 999;
 }
 
@@ -97,9 +97,14 @@ div{
 	margin-left: 120px;
 }
 
+.fv-photo img{
+	min-height: 580px;
+	object-fit: cover;
+}
+
 .fv-textbox{
 	font-weight: bold;
-	margin-left: 120px;
+	margin-left: 8%;
 	color: #333;
 }
 
@@ -110,8 +115,8 @@ div{
 }
 
 .fv-text{
-	font-size: 5rem;
-	margin-top: 20PX;
+	font-size: 4vw;
+	margin-top: 20px;
 }
 
 .fv-subtext{
@@ -136,10 +141,11 @@ div{
 }
 
 .section-title{
-	font-size: 15rem;
+	font-size: 16rem;
 	font-weight: bold;
 	width: 100%;
 	color: #333;
+	letter-spacing: 1px;
 }
 
 .work{
@@ -288,14 +294,6 @@ div{
 	line-height: 2;
 }
 
-.self-sentence{
-	margin-top: 20px;
-	font-size: 1.6rem;
-	line-height: 2.2;
-	letter-spacing: .5px;
-}
-
-
 .self-title{
 	width: 80%;
 	margin: 60px auto 0;
@@ -360,4 +358,249 @@ div{
 	text-align: left;
 }
 
+.res-profile-about{
+	display: none;
+}
 
+.self-about-title{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.self-sentence{
+	margin-top: 15px;
+	font-size: 1.6rem;
+	line-height: 2.2;
+	letter-spacing: .5px;
+;
+}
+
+@media(max-width:896px){
+	.logo{
+		top: 30px;
+		color: #fff;
+		width: 160px;
+		height: 160px;
+		line-height: 150px;
+	}
+
+	.logo-text{
+		font-size: 1.6rem;
+	}
+
+	.logo-text::after{
+		bottom: -30px;
+		font-size: 1.3rem;
+	}
+
+
+
+	.logo.active{
+		height: 100px;
+		line-height: 80px;
+	}
+
+	.logo.active .logo-text{
+		font-size: 1.5rem;
+	}
+
+	.logo.active .logo-text::after{
+		font-size: 1.2rem;
+		bottom: -20px;
+		bottom: -30px;
+	}
+
+	.nav{
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		font-size: 1.6rem;
+		font-weight: bold;
+		width: 450px;
+		right: 60px;
+		top: 60px;
+		z-index: 999;
+	}
+	.fv{
+		display: block;
+		align-items: center;
+
+	}
+
+	.fv-photo{
+		width: 85%;
+		margin:0 0 0 auto;
+	}
+
+	.fv-photo img{
+		min-height: none;
+		object-fit: cover;
+	}
+
+	.fv-textbox{
+		margin-left: 15%;
+		margin-top: 40px;
+	}
+
+	.fv-welcome{
+		font-size: 2rem;
+	}
+
+	.fv-text{
+		font-size: 6.4rem;
+	}
+
+	.fv-subtext{
+		font-size: 2.4rem;
+	}
+
+	.scroll-up{
+		bottom: 20px;
+		right: 20px;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		font-size: 1.8rem;
+	}
+
+	.section-title{
+		font-size: 12rem;
+	}
+
+	.work{
+		margin-top: 120px;
+	}
+	
+	.work-container{
+		display: block;
+		width: 90%;
+		margin: 60px auto 0;
+	}
+
+	.work-box{
+		width: 100%;
+		margin-top: 80px;
+	}
+
+
+	.work-more{
+		width: 80%;
+		margin: 40px auto 0;
+		font-size: 1.4rem;
+	}
+
+	
+	.skill{
+		margin-top: 100px;
+	}
+
+	.skill-container{
+		width: 90%;
+		margin: 80px auto 0;
+	}
+
+	.skill-box i{
+		font-size: 14rem;
+	}
+
+	.skill-img{
+		width: 120px;
+		margin: 60px auto 0;
+	}
+
+	.skill-name{
+		font-size: 1.8rem;
+	}
+
+	.skill-level{
+		font-size: 1.3rem;
+	}
+
+	.skill-text{
+		font-size: 1.3rem;
+	}
+
+	.profile{
+		margin-top: 100px;
+		padding-bottom: 60px;
+	}
+
+	.profile-top{
+		display: flex;
+		width: 80%;
+		margin: 60px auto 0;
+		padding-right: 0px;
+	}
+
+	.profile-photo{
+		width: 45%;
+	}
+
+	.profile-top-text{
+		width: 45%;
+	}
+
+	.profile-name{
+		font-size: 4rem;
+	}
+
+	.brithday,
+	.hobby,
+	.university{
+		margin-top: 20px;
+		font-size: 1.6rem;
+	}
+
+	.self-sentence{
+		margin-top: 20px;
+		font-size: 1.6rem;
+		letter-spacing: .5px;
+	}
+
+
+	.self-title{
+		width: 80%;
+		font-size: 2rem;
+	}
+
+	.self-goal{
+		width: 90%;
+}
+
+	.self-goal-box{
+		width: 32%;
+	}
+
+
+	.self-year{
+		font-size: 1.6rem;
+	}
+
+	.self-year::after{
+		bottom: -9px;
+	}
+
+	.self-subtitle{
+		margin-top: 25px;
+		font-size: 1.4em;
+	}
+
+	.self-goal-box i{
+		font-size: 1.4rem;
+	}
+
+	.self-goal-sentence{
+		font-size: 1.2rem;
+	}
+	
+	.res-profile-about{
+		display: block;
+		width: 90%;
+		margin: 40px auto 0;
+	}
+	
+	.profile-about{
+		display: none;
+	}
+}
