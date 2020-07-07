@@ -23,381 +23,278 @@ div{
 	color: #222;
 }
 
-.fv{
+.logo{
 	position: fixed;
-	width: 100%;
-	height: 100vh;
-}
-
-
-
-.fv-text-box{
-	position: absolute;
-	left: 50%;
-	top: 45%;
-	background-color: #fff;
-	transform: translate(-50%,-50%);
-	width: 100%;
-	font-weight: bold;;
+	left: 0;
+	top: 30px;
+	background-color: #f0353c;
+	color: #fff;
+	width: 200px;
+	height: 200px;
 	text-align: center;
-	transition: all .8s ease;
-	border-radius: 50%;
-}
-
-.fv-text-box.active{
-	left: 25%;
-}
-
-.fv-text-box.active .fv-subtext{
-	font-size: 1.4rem;
-}
-
-.fv-text{
-	position: absolute;
-	top: 48%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size:6rem;
-	width: 100%;
-	color: #222;
-}
-
-.fv-subtext{
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	font-size:2rem;
-	margin-top: 60px;
-}
-
-
-
-.nav{
-	position: absolute;
-	bottom: 120px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 70%;
-	display: flex;
-	justify-content: space-between;
-	font-size: 1.8rem;
-	transition: all .8s ease;
-	color: #222;
-}
-
-.nav.active{
-	width: 30%;
-	left: 25%;
-}
-
-
-.nav p{
-	position: relative;
-	display: block;
+	line-height: 180px;
 	font-weight: bold;
-	cursor: pointer;
-	padding-bottom: 3px;
-}
-
-.top-nav{
-	border-bottom: 3px solid #222;
-	border-radius: 1px;
-}
-
-
-.work-nav.active,
-.skill-nav.active,
-.profile-nav.active{
-	border-bottom: 3px solid #222;
-	border-radius: 1px;
-}
-
-.section-title{
-	font-size: 5rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-.res-title{
-	display: none;
-}
-
-.work{
-	position: relative;
-	width: 50%;
-	margin: 0 0 0 auto;
-	right: 0;
-	transition: all .8s ease;
-	opacity: 0;
-	visibility: hidden;
-	background-color: #fbfbfb;
-}
-
-
-.work.active{
-	opacity: 1;
-	visibility: visible;
-}
-
-
-.work-box{
-	position: relative;
-	width: 90%;
-	margin:50px auto;
-	display: none;
-}
-
-.work-photo{
-	overflow: hidden;
-	width: 100%;
-}
-
-.work-photo img{
+	z-index: 999;
 	transition: all .5s ease;
 }
 
-.work-photo:hover img{
-	transform: scale(1.05);
-}
-
-.work-number{
+.logo-text{
 	position: relative;
-	text-align: center;
-	margin-top: 15px;
-	font-size: 1.8rem;
-	color: #333;
+	font-size: 2rem;
 }
 
-.work-number::after{
+.logo-text::after{
 	position: absolute;
-	content: "";
-	background-color: #333;
-	width: 40px;
-	height: 1px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	bottom: -5px;
-}
-
-.work-title{
-	font-size: 1.8rem;
-	margin-top: 20px;
-	text-align: center;
-	letter-spacing: 1px;
-	font-weight: bold;
-	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
-	line-height: 1.8;
-}
-
-.work-title br{
-	display: none;
-}
-
-
-
-.work-textbox{
-	margin-top:30px;
-	margin-left: 20px;
-}
-.work-text{
+	content: "Port folio";
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -40px;
 	font-size: 1.6rem;
-	margin-top: 20px;
 }
 
 
-.work-more{
-	position: relative;
-	display: block;
-	width: 200px;
-	height: 60px;
-	line-height:60px;
-	text-align: center;
+
+.logo.active{
+	top: 0;
+	height: 130px;
+	line-height: 110px;
+}
+
+.logo.active .logo-text{
+	font-size: 1.5rem;
+}
+
+.logo.active .logo-text::after{
 	font-size: 1.2rem;
-	transition: all .3s ease;
-	margin: 40px auto 0;
-	border: 1px solid #000;
-	color: #000;
+	bottom: -30px;
 }
 
-.work-more::before,
-.work-more::after{
-	position: absolute;
-	content: "";
-	background-color: #000;
-	transition: all .3s ease;
-}
-
-.work-more::before{
-	width: 1px;
-	height: 100%;
-	top: 8px;
-	right: -8px;
-}
-
-.work-more::after{
-	width: 100%;
-	height: 1px;
-	bottom: -8px;
-	right: -8px;
-}
-
-.work-more:hover{
-	color: #fff;
-	background-color: #222;
-}
-
-.work-more:hover::before{
-	height: 0;
-}
-
-.work-more:hover::after{
-	width: 0;
-}
-.work1-next{
-	position: absolute;
-	right: 40px;
-	bottom: 60px;
-	font-size: 1.8rem;
+.nav{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	font-size: 1.6rem;
 	font-weight: bold;
-	color: #444;
+	width: 500px;
+	right: 60px;
+	top: 80px;
+	z-index: 999;
+}
+
+.nav li{
 	cursor: pointer;
 }
 
-.work1-next::after{
-	position: absolute;
-	content: "";
-	background-color: #222;
-	width: 1px;
-	height: 55px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	bottom: -60px;
+.fv{
+	position: relative;
+	display: flex;
+	align-items: center;
+	
+}
+
+.fv-photo{
+	width: 45%;
+	margin-left: 120px;
+}
+
+.fv-textbox{
+	font-weight: bold;
+	margin-left: 120px;
+	color: #333;
+}
+
+.fv-welcome{
+	font-size: 1.4rem;
+	font-weight: 100;
+	color: #f0353c;
+}
+
+.fv-text{
+	font-size: 5rem;
+	margin-top: 20PX;
+}
+
+.fv-subtext{
+	font-size: 2rem;
+	margin-top: 20PX;
+}
+
+.scroll-up{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background-color:  #f0353c;
+	border-radius: 50%;
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.section-title{
+	font-size: 15rem;
+	font-weight: bold;
+	width: 100%;
+	color: #333;
+}
+
+.work{
+	width: 100%;
+	position: relative;
+	margin-top: 80px;
+}
+
+.work-title{
+	text-align: right;
+}
+
+.work-container{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 60px auto 0;
+}
+
+.work-box{
+	width: 47%;
+}
+
+
+.work-photo{
+	box-shadow: 20px 20px 20px rgba(0,0,0,.1);
+}
+
+
+.work-texttitle{
+	font-weight: bold;
+	font-size: 2.2rem;
+	margin-top: 30px;
+}
+
+.work-text{
+	font-size: 1.6rem;
+	margin-top: 25px;
+}
+
+.work-day{
+	margin-top: 40px;
+}
+
+.work-more{
+	display: block;
+	width: 250px;
+	height: 60px;
+	line-height: 60px;
+	border: 1px solid #555;
+	border-radius: 30px;
+	color: #333;
+	text-align: center;
+	margin: 50px auto 0 0;
+	font-size: 1.4rem;
 }
 
 .skill{
-	position: relative;
-	margin: 0 0 0 auto;
-	width: 50%;
-	right: 0;
-	top: 0;
-	transition: all .8s ease;
-	background-color: #fbfbfb;
-	opacity: 0;
-	visibility: hidden;
-	padding: 30px 0 40px;
-	display: none;
-}
-
-.skill.active{
-	opacity: 1;
-	visibility: visible;
-	display: block;
-
+	margin-top: 120px;
 }
 
 .skill-container{
 	width: 85%;
-	margin: 0px auto;
+	margin: 80px auto 0;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .skill-box{
 	width: 30%;
+	margin: 0px auto 0;
 	text-align: center;
-	margin-top: 40px;
-	display: none;
 }
 
-.skill i{
-	font-size: 9rem;
-	color: #B47778;	
-	
+.skill-box i{
+	font-size: 18rem;
+	margin:  0 auto;
+	color: #333;
 }
 
 .skill-img{
-	width: 90px;
-	height: 90px;
-	margin: 0 auto;
+	width: 160px;
+	margin: 60px auto 0;
 }
 
 .skill-name{
-	font-size: 1.6rem;
+	font-size: 2rem;
 	margin-top: 15px;
 	font-weight: bold;
 }
 
 .skill-level{
-	font-size: 1.2rem;
-	margin-top: 10px;
+	font-size: 1.6rem;
+	margin-top: 15px;
 }
 
 .skill-text{
+	width: 70%;
+	margin: 10px auto 0;
+	font-size: 1.5rem;
 	margin-top: 10px;
 	line-height: 1.8;
-	font-size: 1.3rem;
 }
-
-
 
 .profile{
-	position: relative;
-	width: 50%;
-	margin: 0 0 0 auto;
-	right: 0;
-	transition: all .8s ease;
-	opacity: 0;
-	visibility: hidden;
-	background-color: #fbfbfb;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	display: none;
+	width: 100%;
+	margin-top: 120px;
+	padding-bottom: 80px;
 }
 
-
-.profile.active{
-	opacity: 1;
-	visibility: visible;
+.profile-title{
+	text-align: right;
 }
 
 .profile-top{
 	display: flex;
-	justify-content:center;
+	justify-content:space-between;
 	align-items: center;
-	width: 90%;
-	margin: 0 auto;
+	width: 85%;
+	margin: 60px auto 0;
 	padding-right: 20px;
 }
 
 .profile-photo{
-	width: 45%;
-	margin-right: 40px;
+	width: 40%;
 }
 
 .profile-photo img{
 	border-radius: 50%;
 }
 
+.profile-top-text{
+	width: 50%;
+}
+
 .profile-name{
-	font-size: 3.4rem;
+	font-size: 4rem;
 }
 
-.brithday{
-	margin-top: 30px;
-	font-size: 1.6rem;
-	line-height: 1.8;
-}
-
+.brithday,
 .hobby,
 .university{
+	margin-top: 30px;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+.self-sentence{
 	margin-top: 20px;
 	font-size: 1.6rem;
-	line-height: 1.8;
+	line-height: 2.2;
+	letter-spacing: .5px;
 }
+
 
 .self-title{
 	width: 80%;
@@ -408,19 +305,10 @@ div{
 	text-align: center;
 }
 
-.self-sentence{
-	width: 80%;
-	margin: 20px auto 0;
-	font-size: 1.6rem;
-	line-height: 2.2;
-	letter-spacing: .5px;
-}
-
 .self-goal{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 	width: 80%;
 	margin: 40px auto 0;
 	text-align: center;
@@ -430,12 +318,9 @@ div{
 	border: 2px solid #444;
 	border-radius: 20px;
 	padding: 30px;
-	width: 48%;
+	width: 32%;
 }
 
-.self-goal-box3{
-	margin: 20px auto 0;
-}
 
 .self-year{
 	position: relative;
@@ -475,610 +360,4 @@ div{
 	text-align: left;
 }
 
-.res-scroll-up{
-	display: none;
-}
 
-
-
-
-
-
-
-@media(max-width:1024px){
-	
-	.fv{
-		position: relative;
-		width: 100%;
-		height: 70vh;
-	}
-
-	.fv-text-box{
-		top: 50%;
-	}
-
-	.fv-text{
-		font-size:6rem;
-	}
-
-	.fv-subtext{
-		font-size:2rem;
-		margin-top: 60px;
-	}
-
-
-
-	.nav{
-		position: relative;
-		top: 40px;
-		bottom: auto;
-		width: 90%;
-		font-size: 1.8rem;
-		z-index: 999;
-	}
-
-
-
-	.nav p{
-		padding-bottom: 0;
-	}
-
-
-		.nav .top-nav{
-			display: none;
-			border-bottom: none;
-		}
-
-
-	.section-title{
-		display: none;
-	}
-
-	.res-title-wrap{
-		position: relative;
-	}
-	
-
-	.res-title{
-			font-size: 4.4rem;
-	font-weight: bold;
-	text-align: center;
-		position: relative;
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-	
-	.res-title-wrap::before,
-	.res-title-wrap::after,
-	.res-title::before,
-	.res-title::after{
-		position: absolute;
-		content: "";
-		background-color: #000;
-	}
-	
-	.res-title-wrap::before{
-		width: 30px;
-		height: 5px;
-		top: -15px;
-		left: 7.5%;
-	}
-	
-	.res-title-wrap::after{
-		width: 5px;
-		height: 30px;
-		top: -15px;
-		left: 7.5%;
-	}
-	
-	.res-title::before{
-		width: 30px;
-		height: 5px;
-		bottom: -15px;
-		right: 7.5%;;
-	}
-	
-	.res-title::after{
-		width: 5px;
-		height: 30px;
-		bottom: -15px;
-		right: 7.5%;
-	}
-	
-	
-	.work{
-		position: static;
-		width: 100%;
-		margin: 0 auto;
-		right: auto;
-		opacity: 1;
-		visibility: visible;
-		background-color: #fff;
-		padding-top: 60px;
-	}
-
-	.work-box{
-		width: 90%;
-		margin: 60px auto 0;
-		height: auto;
-		display: block;
-	}
-	
-	.work-title{
-		text-align: left;
-		font-size: 2.2rem;
-		margin-top: 20px;
-	}
-
-	.work-textbox{
-		margin-top:30px;
-		margin-left: 0px;
-	}
-	.work-text{
-		font-size: 1.6rem;
-		margin-top: 20px;
-	}
-
-
-	.work-more{
-		font-size: 1.2rem;
-		margin: 40px auto 0 0;
-		width:100%;
-		height: 60px;
-		line-height: 60px;
-		background-color: #333;
-		color: #fff;
-	}
-
-
-	.work-more::before{
-		display: none;
-	}
-
-	.work-more::after{
-		display: none;
-	}
-
-	.work-more:hover::before{
-		height: 0;
-	}
-
-	.work-more:hover::after{
-		width: 0;
-	}
-	.work1-next{
-		display: none;
-	}
-
-
-
-
-	.skill{
-		position: relative;
-		margin: 80px auto 0;
-		padding-top: 60px;
-		width: 100%;
-		right: auto;
-		top: auto;
-		background-color: #fff;
-		opacity: 1;
-		visibility: visible;
-		padding-bottom: 0;
-		display: block;
-	}
-
-	.skill-container{
-		width: 85%;
-		margin: 20px auto 0;
-	}
-
-	.skill-box{
-		width: 30%;
-		text-align: center;
-		margin-top: 50px;
-		display: block;
-	}
-
-	.skill i{
-		font-size: 9rem;
-		color: #B47778;	
-
-	}
-
-	.skill-img{
-		width: 90px;
-		height:90px;
-		margin: 0 auto;
-	}
-
-	.skill-name{
-		font-size: 1.4rem;
-		margin-top: 15px;
-	}
-
-	.skill-level{
-		font-size: 1rem;
-		margin-top: 10px;
-	}
-
-	.skill-text{
-		margin-top: 10px;
-		font-size: 1.2rem;
-		width: 80%;
-		margin: 10px auto 0;
-	}
-
-
-
-	.profile{
-		position: relative;
-		width: 100%;
-		margin: 80px auto 0;
-		padding-top: 80px;
-		right: auto;
-		opacity: 1;
-		visibility: visible;
-		background-color: #ffff;
-		display:block;
-	}
-
-	.profile-top{
-		width: 85%;
-		margin: 60px auto 0;
-		padding-right: 20px;
-	}
-
-	.profile-photo{
-		width: 40%;
-		margin-right: 100px;
-	}
-
-
-	.profile-name{
-		font-size: 4rem;
-	}
-
-	.brithday,
-	.hobby,
-	.university{
-		margin-top: 30px;
-		font-size: 1.6rem;
-	}
-
-	.self-title{
-		width: 80%;
-		margin: 60px auto 0;
-		font-size: 2rem;
-		font-weight: bold;
-		letter-spacing: .5px;
-		text-align: center;
-	}
-
-	.self-sentence{
-		width: 80%;
-		margin: 20px auto 0;
-		font-size: 1.5rem;
-		line-height: 2.2;
-		letter-spacing: .5px;
-	}
-
-	.self-goal{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-		width: 80%;
-		margin: 40px auto 0;
-		text-align: center;
-	}
-
-	.self-goal-box{
-		border: 2px solid #444;
-		border-radius: 20px;
-		padding: 30px;
-		width: 48%;
-	}
-
-	.self-goal-box3{
-		margin: 20px auto 0;
-	}
-
-	.self-year{
-		position: relative;
-		font-size: 1.8rem;
-	}
-
-	.self-year::after{
-		position: absolute;
-		content: "";
-		background-color: #444;
-		left: 0;
-		right: 0;
-		margin: auto;
-		bottom: -11px;
-		width: 95%;
-		height: 2px;
-	}
-
-	.self-subtitle{
-		margin-top: 25px;
-		font-size: 1.5rem;
-		font-weight: bold;
-		letter-spacing: 1px;
-		line-height:1.7;
-	}
-
-	.self-goal-box i{
-		margin-top: 15px;
-		font-size: 1.4rem;
-	}
-
-	.self-goal-sentence{
-		margin-top: 15px;
-		font-size: 1.4rem;
-		line-height: 2;
-		letter-spacing: .5px;
-		text-align: left;
-	}
-
-	
-	.res-scroll-up{
-		position: fixed;
-		right: 10px;
-		bottom: 10px;
-		display: block;
-		width: 60px;
-		height: 60px;
-		line-height: 60px;
-		border: 2px solid #000;
-		text-align: center;
-		font-size: 1.7rem;
-		cursor: pointer;
-		background-color: #222;
-		color: #fff;
-	}
-	
-}
-
-
-
-
-
-@media(max-width:480px){
-	
-	.fv-text{
-		font-size:3.6rem;
-	}
-
-	.fv-subtext{
-		font-size:1.6rem;
-		margin-top: 50px;
-	}
-
-
-
-	.nav{
-		top: 30px;
-		font-size: 1.6rem;
-	}
-
-	.res-title{
-		font-size: 2.8rem;
-	}
-	
-	.res-title-wrap::before{
-		width: 20px;
-		height: 3px;
-		top: -10px;
-	}
-	
-	.res-title-wrap::after{
-		width: 3px;
-		height: 20px;
-		top: -10px;
-	}
-	
-	.res-title::before{
-		width: 20px;
-		height: 3px;
-		bottom: -10px;
-	}
-	
-	.res-title::after{
-		width: 3px;
-		height: 20px;
-		bottom: -10px;
-	}
-	
-	
-	.work{
-		padding-top: 40px;
-	}
-
-
-	.work-box{
-		width: 90%;
-		margin: 60px auto 0;
-	}
-	
-	.work-title{
-		font-size: 1.4rem;
-		margin-top: 10px;
-	}
-
-	.work-title br{
-		display: block;
-	}
-
-	.work-textbox{
-		margin-top:20px;
-	}
-	.work-text{
-		font-size: 1.3rem;
-		margin-top: 15px;
-	}
-
-
-	
-	.work-more{
-		font-size: 1rem;
-		margin-top: 30px;
-		height: 45px;
-		line-height: 45px;
-	}
-
-
-	.work-more::before,
-	.work-more::after{
-		display: none;
-	}
-
-	.skill{
-		margin: 60px auto 0;
-		padding-top: 40px;
-	}
-
-	.skill-container{
-		width: 80%;
-		margin: 10px auto 0;
-	}
-
-	.skill-box{
-		width: 50%;
-		margin-top: 40px;
-	}
-
-	.skill i{
-		font-size: 8rem;
-		color: #B47778;	
-
-	}
-
-	.skill-img{
-		width: 80px;
-		height:80px;
-		margin: 0 auto;
-	}
-
-	.skill-name{
-		font-size: 1.4rem;
-		margin-top: 15px;
-	}
-
-	.skill-level{
-		display: none;
-	}
-
-	.skill-text{
-		display: none;
-	}
-
-
-	
-	
-
-	.profile{
-		margin: 40px auto 0;
-		padding-top: 60px;
-	}
-
-	.profile-top{
-		width: 85%;
-		margin: 60px auto 0;
-		padding-right: 0px;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	.profile-photo{
-		width: 80%;
-		margin: 0 auto;
-	}
-	
-	.profile-top-text{
-		text-align: center;
-		width: 100%;
-		margin:30px auto 0;
-	}
-
-	.profile-name{
-		font-size: 3rem;
-	}
-
-	.brithday,
-	.hobby,
-	.university{
-		margin-top: 15px;
-		font-size: 1.4rem;
-	}
-
-	.self-title{
-		width: 90%;
-		margin: 40px auto 0;
-		font-size: 1.8rem;
-	}
-
-	.self-sentence{
-		width: 85%;
-		margin: 20px auto 0;
-		font-size: 1.4rem;
-	}
-
-	.self-goal{
-		display: block;
-		width: 85%;
-		margin: 40px auto 0;
-	}
-
-	.self-goal-box{
-		border: 2px solid #444;
-		border-radius: 20px;
-		padding: 20px;
-		width: 100%;
-	}
-
-	.self-goal-box2{
-		margin-top: 20px;
-	}
-	.self-goal-box3{
-		margin: 20px auto 0;
-	}
-
-	.self-year{
-		position: relative;
-		font-size: 1.6rem;
-	}
-
-	.self-year::after{
-		bottom: -11px;
-		width: 85%;
-		height: 2px;
-	}
-
-	.self-subtitle{
-		margin-top: 25px;
-		font-size: 1.4rem;
-	}
-
-	.self-goal-box i{
-		margin-top: 10px;
-		font-size: 1.2rem;
-	}
-
-	.self-goal-sentence{
-		font-size: 1.3rem;
-		width: 85%;
-		margin: 10px auto 0;
-	}
-
-	
-	.res-scroll-up{
-		width: 50px;
-		height: 50px;
-		line-height: 50px;
-		border: 1px solid #000;
-		font-size: 1.6rem;
-	}
-	
-}
